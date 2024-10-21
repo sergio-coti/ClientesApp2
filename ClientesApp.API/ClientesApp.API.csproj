@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClientesApp.Application\ClientesApp.Application.csproj" />
+    <ProjectReference Include="..\ClientesApp.Domain\ClientesApp.Domain.csproj" />
+    <ProjectReference Include="..\ClientesApp.Infra.Data.MongoDB\ClientesApp.Infra.Data.MongoDB.csproj" />
+    <ProjectReference Include="..\ClientesApp.Infra.Data.SqlServer\ClientesApp.Infra.Data.SqlServer.csproj" />
+    <ProjectReference Include="..\ClientesApp.Infra.Messages\ClientesApp.Infra.Messages.csproj" />
+  </ItemGroup>
+
+</Project>
